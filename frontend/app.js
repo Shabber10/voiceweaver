@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Determine API Base URL dynamically for local vs Remote (Render)
     const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
         ? 'http://localhost:3000' 
-        : 'https://voiceweaver-backend.onrender.com'; // Replace this with your actual Render URL later!
+        : 'https://voiceweaver.onrender.com';
 
     const fetchTTS = async (text) => {
         const response = await fetch(`${API_BASE}/api/tts`, {
